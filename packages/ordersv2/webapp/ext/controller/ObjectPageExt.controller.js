@@ -1,5 +1,5 @@
-sap.ui.define(["sap/ui/core/mvc/Controller", "thirdparty/customControl/excelUpload/ExcelUpload"],
-    function (Controller, ExcelUpload) {
+sap.ui.define(["sap/ui/core/mvc/Controller"],
+    function (Controller) {
         "use strict";
         return {
             /**
@@ -15,7 +15,7 @@ sap.ui.define(["sap/ui/core/mvc/Controller", "thirdparty/customControl/excelUplo
                 this.getView().setBusyIndicatorDelay(0)
                 // this.getView().setBusy(true)
                 if(!this.excelUploadController){
-                    this.excelUploadController = await Controller.create({ name:"cc.excelUpload.ExcelUpload"})
+                    this.excelUploadController = await Controller.create({ name:"thirdparty.customControl.excelUpload.ExcelUpload"})
                     this.excelUploadController.setContext(this._options)  
                 }          
                 this.excelUploadController.openExcelUploadDialog()          
