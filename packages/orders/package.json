@@ -10,7 +10,7 @@
   ],
   "main": "webapp/index.html",
   "dependencies": {
-    "ui5-cc-excelupload":"0.2.2"
+    "ui5-cc-excelupload": "0.3.1"
   },
   "devDependencies": {
     "@ui5/cli": "^2.14.1",
@@ -21,7 +21,7 @@
   "scripts": {
     "start": "fiori run -p 8080 --open \"test/flpSandbox.html?sap-ui-xx-viewCache=false#uiv4orders-tile\"",
     "start-local": "fiori run --config ./ui5-local.yaml --open \"test/flpSandbox.html?sap-ui-xx-viewCache=false#uiv4orders-tile\"",
-    "build": "ui5 build --config=ui5.yaml --clean-dest --dest dist",
+    "build": "ui5 build --config=ui5.yaml -all --clean-dest --dest dist",
     "deploy": "fiori verify",
     "deploy-config": "fiori add deploy-config",
     "start-noflp": "fiori run --open \"index.html?sap-ui-xx-viewCache=false\"",
