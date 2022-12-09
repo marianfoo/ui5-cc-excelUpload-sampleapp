@@ -82,6 +82,10 @@ annotate OrdersService.Orders.Items with @(
 			{Value: quantity, Label:'{i18n>Quantity}'},
 			{Value: title, Label:'{i18n>Product}'},
 			{Value: price, Label:'{i18n>UnitPrice}'},
+			{Value: validFrom, Label:'validFrom'},
+			{Value: timestamp, Label:'timestamp'},
+			{Value: date, Label:'date'},
+			{Value: time, Label:'time'},
 		],
 		Facets: [
 			{$Type: 'UI.ReferenceFacet', Label: '{i18n>OrderItems}', Target: '@UI.Identification'},

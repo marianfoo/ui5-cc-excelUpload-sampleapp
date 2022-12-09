@@ -9,6 +9,10 @@ entity Orders : cuid, managed {
     quantity  : Integer;
     title     : String; //> intentionally replicated as snapshot from product.title
     price     : Double; //> materialized calculated field
+    validFrom : DateTime;
+    timestamp : Timestamp;
+    date      : Date;
+    time      : Time;
   };
   buyer    : User;
   currency : Currency;
