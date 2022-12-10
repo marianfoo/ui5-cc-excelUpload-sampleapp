@@ -3,8 +3,13 @@ namespace sap.capire.orders;
 
 entity Orders : cuid, managed {
   OrderNo  : String(22) @title:'Order Number'; //> readable key
-  Items    : Composition of many {
-    key ID    : UUID;
+  Items    : Composition of many OrderItems on Items.order = $self;
+  buyer    : User;
+  currency : Currency;
+}
+
+entity OrderItems : cuid {
+    order     : Association to Orders;
     product   : Association to Products;
     quantity  : Integer;
     title     : String; //> intentionally replicated as snapshot from product.title
@@ -13,9 +18,6 @@ entity Orders : cuid, managed {
     timestamp : Timestamp;
     date      : Date;
     time      : Time;
-  };
-  buyer    : User;
-  currency : Currency;
 }
 
 /** This is a stand-in for arbitrary ordered Products */

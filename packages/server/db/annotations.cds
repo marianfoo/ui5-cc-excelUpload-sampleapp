@@ -70,22 +70,26 @@ annotate OrdersService.Orders with @(
 
 
 
-annotate OrdersService.Orders.Items with @(
+annotate OrdersService.OrderItems with @(
 	UI: {
 		LineItem: [
 			{Value: product_ID, Label:'ID'},
 			{Value: title, Label:'{i18n>ProductTitle}'},
 			{Value: price, Label:'{i18n>UnitPrice}'},
 			{Value: quantity, Label:'{i18n>Quantity}'},
+			{Value: validFrom, Label:'{i18n>validFrom}'},
+            {Value: timestamp, Label:'{i18n>timestamp}'},
+            {Value: date, Label:'{i18n>date}'},
+            {Value: time, Label:'{i18n>time}'},
 		],
 		Identification: [ //Is the main field group
 			{Value: quantity, Label:'{i18n>Quantity}'},
 			{Value: title, Label:'{i18n>Product}'},
 			{Value: price, Label:'{i18n>UnitPrice}'},
-			{Value: validFrom, Label:'validFrom'},
-			{Value: timestamp, Label:'timestamp'},
-			{Value: date, Label:'date'},
-			{Value: time, Label:'time'},
+			{Value: validFrom, Label:'{i18n>validFrom}'},
+            {Value: timestamp, Label:'{i18n>timestamp}'},
+            {Value: date, Label:'{i18n>date}'},
+            {Value: time, Label:'{i18n>time}'},
 		],
 		Facets: [
 			{$Type: 'UI.ReferenceFacet', Label: '{i18n>OrderItems}', Target: '@UI.Identification'},
@@ -96,6 +100,6 @@ annotate OrdersService.Orders.Items with @(
 		Common.FieldControl: #Mandatory
 	);
         ID       @UI.Hidden;
-        up_      @UI.Hidden;
+        order    @UI.Hidden;
 
 };
