@@ -33,8 +33,8 @@
     "testv2": "wdio run ./test/wdioV2.conf.js",
     "testv4": "wdio run ./test/wdioV4.conf.js",
     "link": "run-p link:orders link:ordersv2",
-    "link:orders": "cd ./packages/orders/ && npm run link ui5-cc-excelupload",
-    "link:ordersv2": "cd ./packages/ordersv2/ && npm run link ui5-cc-excelupload"
+    "link:orders": "cd ./packages/orders/ && npm link ui5-cc-excelupload",
+    "link:ordersv2": "cd ./packages/ordersv2/ && npm link ui5-cc-excelupload"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
