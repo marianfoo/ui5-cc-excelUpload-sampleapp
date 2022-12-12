@@ -53,7 +53,7 @@ jobs:
 
       - name: install @sap/cds-dk
         run: |
-        npm i -g @sap/cds-dk
+          npm i -g @sap/cds-dk
 
       # run app
       - name: run app
