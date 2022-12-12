@@ -49,7 +49,7 @@ jobs:
       # update chromedriver
       - name: update chromedriver to latest
         run: |
-          pnpm add chromedriver@latest --save-dev
+          pnpm add chromedriver@latest --save-dev -w
 
       # run app
       - name: run app
