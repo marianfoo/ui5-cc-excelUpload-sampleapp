@@ -31,7 +31,10 @@
     "ncu-u": "for d in ./packages/*/ ; do (cd \"$d\" && ncu -u); done",
     "wdi5": "pnpm --filter @local/ui wdi5",
     "testv2": "wdio run ./test/wdioV2.conf.js",
-    "testv4": "wdio run ./test/wdioV4.conf.js"
+    "testv4": "wdio run ./test/wdioV4.conf.js",
+    "link": "run-p link:orders link:ordersv2",
+    "link:orders": "cd ./packages/orders/ && npm run link",
+    "link:ordersv2": "cd ./packages/ordersv2/ && npm run link",
   },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
