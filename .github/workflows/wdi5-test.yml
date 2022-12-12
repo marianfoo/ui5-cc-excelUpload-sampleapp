@@ -51,6 +51,10 @@ jobs:
         run: |
           pnpm add chromedriver@latest --save-dev -w
 
+      - name: install @sap/cds-dk
+        run: |
+        npm i -g @sap/cds-dk
+
       # run app
       - name: run app
         run: npm run start&
