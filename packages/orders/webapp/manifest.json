@@ -130,7 +130,8 @@
                                         "route": "OrdersObjectPage"
                                     }
                                 }
-                            }
+                            },
+                            "initialLoad": "Enabled"
                         }
                     }
                 },
