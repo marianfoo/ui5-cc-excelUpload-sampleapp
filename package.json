@@ -29,7 +29,6 @@
     "hooks:pre-push": "npm-run-all --sequential lint:commit",
     "ncu": "for d in ./packages/*/ ; do (cd \"$d\" && ncu); done",
     "ncu-u": "for d in ./packages/*/ ; do (cd \"$d\" && ncu -u); done",
-    "wdi5": "pnpm --filter @local/ui wdi5",
     "testv2": "wdio run ./test/wdioV2.conf.js",
     "testv4": "wdio run ./test/wdioV4.conf.js",
     "link": "run-p link:orders link:ordersv2",

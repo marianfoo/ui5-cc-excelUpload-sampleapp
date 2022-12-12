@@ -45,12 +45,12 @@ sap.ui.define(["sap/ui/core/mvc/Controller"],
 
                     // event to change data before send to backend
                     this.excelUpload.attachChangeBeforeCreate(function(oEvent) {
-                        // oEvent.getSource().setPayload({
-                        //     "product_ID": "123",
-                        //     "quantity": 1,
-                        //     "title": "Test",
-                        //     "price": 25
-                        // })
+                        oEvent.getSource().setPayload({
+                            "product_ID": "123",
+                            "quantity": 1,
+                            "title": "Test",
+                            "price": 25
+                        })
                     }, this)
                 }
                 this.excelUpload.openExcelUploadDialog()
