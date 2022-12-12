@@ -61,8 +61,8 @@ jobs:
 
       # run wdi5 tests
       - name: test wdi5 v2
-        run: npm run testv2
+        run: npm run testv2 -- --headless
 
       # run wdi5 tests
       - name: test wdi5 v4
-        run: npm run testv4
+        run: npm run testv4 -- --headless
