@@ -1,5 +1,5 @@
-sap.ui.define(["sap/ui/core/mvc/Controller"],
-    function (Controller) {
+sap.ui.define([],
+    function () {
         "use strict";
         return {
             /**
@@ -9,10 +9,10 @@ sap.ui.define(["sap/ui/core/mvc/Controller"],
              openExcelUploadDialog: async function (oEvent) {
 
                 this.getView().setBusyIndicatorDelay(0)
-                // this.getView().setBusy(true)
+                this.getView().setBusy(true)
                 if (!this.excelUpload) {
                     this.excelUpload = await sap.ui.getCore().createComponent({
-                        name: "thirdparty.customControl.excelUpload",
+                        name: "cc.excelUpload",
                         async: false,
                         componentData: {
                             context: this,

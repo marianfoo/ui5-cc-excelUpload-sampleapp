@@ -56,9 +56,9 @@ importers:
       '@sap/ux-specification': UI5-1.108
       '@sap/ux-ui5-tooling': '1'
       '@ui5/cli': ^2.14.1
-      ui5-cc-excelupload: 0.3.1
+      ui5-cc-excelupload: 0.4.0
     dependencies:
-      ui5-cc-excelupload: 0.3.1
+      ui5-cc-excelupload: 0.4.0
     devDependencies:
       '@sap-ux/ui5-middleware-fe-mockserver': 2.1.43
       '@sap/ux-specification': 1.102.14
@@ -71,9 +71,9 @@ importers:
       '@sap/ux-specification': UI5-1.108
       '@sap/ux-ui5-tooling': '1'
       '@ui5/cli': ^2.14.1
-      ui5-cc-excelupload: 0.3.1
+      ui5-cc-excelupload: 0.4.0
     dependencies:
-      ui5-cc-excelupload: 0.3.1
+      ui5-cc-excelupload: 0.4.0
     devDependencies:
       '@sap-ux/ui5-middleware-fe-mockserver': 2.1.43
       '@sap/ux-specification': 1.102.14
@@ -7573,8 +7573,8 @@ packages:
     resolution: {integrity: sha512-8Y75pvTYkLJW2hWQHXxoqRgV7qb9B+9vFEtidML+7koHUFapnVJAZ6cKs+Qjz5Aw3aZWHMC6u0wJE3At+nSGwA==}
     dev: true
 
-  /ui5-cc-excelupload/0.3.1:
-    resolution: {integrity: sha512-nBye7rxmVT8ZnxFFr/oBZthwSMj1wOjygcefgRB+UQvr+8l6RQfgDq47KswgcK1SBSaJBDt66KYQVnget4UYaA==}
+  /ui5-cc-excelupload/0.4.0:
+    resolution: {integrity: sha512-jL1enpuzDs2Gk131y8SJOqS/3O2qAILXz1QDkiPeKr7aSSQ5pfwRqlXMnNO1rX3CThBV8TU3sD0mzLCRstXtNA==}
     dependencies:
       xlsx: 0.18.5
     dev: false
